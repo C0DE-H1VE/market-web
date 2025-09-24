@@ -1,6 +1,8 @@
 import Image from "next/image";
-import Counter from "@/components/Counter";
-import UserLogin from "@/components/UserLogin";
+import Counter from "@/components/examples/Counter";
+import UserLogin from "@/components/examples/UserLogin";
+import PaginatorExample from "@/components/examples/PaginatorExample";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
             Stack de desenvolvimento com Next.js, TypeScript, Tailwind CSS e Zustand
           </p>
         </div>
+
+        <Sidebar />
 
         <div className="grid gap-6 md:grid-cols-2 w-full">
           <div className="p-6 border rounded-lg bg-white shadow-sm">
@@ -47,28 +51,7 @@ export default function Home() {
 
         <div className="grid gap-6 md:grid-cols-2 w-full">
           <UserLogin />
-          
-          <div className="p-6 border rounded-lg bg-blue-50">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">📚 Recursos Adicionais</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500">•</span>
-                ESLint configurado
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500">•</span>
-                PostCSS com Tailwind
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500">•</span>
-                TypeScript strict mode
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500">•</span>
-                Turbopack para development
-              </li>
-            </ul>
-          </div>
+          <PaginatorExample />
         </div>
 
         <div className="w-full p-6 border rounded-lg bg-gray-50">

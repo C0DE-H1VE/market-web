@@ -20,7 +20,10 @@ src/
 │   └── globals.css        # Estilos globais
 ├── components/            # Componentes reutilizáveis
 │   ├── Counter.tsx        # Exemplo de counter com Zustand
-│   └── UserLogin.tsx      # Exemplo de login com estado
+│   ├── UserLogin.tsx      # Exemplo de login com estado
+│   ├── Paginator.tsx      # Componente de paginação completo
+│   ├── SimplePaginator.tsx # Versão compacta do paginador
+│   └── PaginatorExample.tsx # Demonstração dos paginadores
 ├── stores/                # Stores do Zustand
 │   ├── atoms.ts           # Definição das stores
 │   └── index.ts           # Exportações
@@ -71,6 +74,30 @@ export const useCounterStore = create<CounterStore>((set) => ({
    ```bash
    npm start
    ```
+
+## 🧩 Componentes Disponíveis
+
+### 📄 **Sistema de Paginação**
+- `Paginator` - Componente completo com lógica interna
+- `SimplePaginator` - Versão compacta controlada externamente
+- Suporte para até 7 elementos visíveis
+- Reticências inteligentes baseadas no contexto
+- Navegação com setas e clique direto nas páginas
+- Totalmente responsivo e acessível
+
+📖 **Documentação:** [PAGINATOR.md](./PAGINATOR.md)
+
+### 🎛 **Gerenciamento de Estado**
+- `Counter` - Exemplo de contador usando Zustand
+- `UserLogin` - Sistema de login com estado persistente
+- Hooks personalizados para interações complexas
+
+### 🎨 **Interface**
+- Componentes estilizados com Tailwind CSS
+- Design system consistente
+- Componentes totalmente tipados com TypeScript
+
+---
 
 ## 📝 Scripts Disponíveis
 
